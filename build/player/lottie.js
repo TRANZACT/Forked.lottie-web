@@ -5924,7 +5924,7 @@
       We split each bezier segment into smaller pieces based
       on inflection points, this ensures the control point
       polygon is convex.
-       (A cubic bezier can have none, one, or two inflection points)
+        (A cubic bezier can have none, one, or two inflection points)
     */
     var flex = segment.inflectionPoints();
     var left;
@@ -10216,6 +10216,7 @@
       this.layerElement.setAttribute('font-weight', fWeight);
     }
     this.layerElement.setAttribute('aria-label', documentData.t);
+    this.layerElement.setAttribute('role', 'group');
     var letters = documentData.l || [];
     var usesGlyphs = !!this.globalData.fontManager.chars;
     len = letters.length;
